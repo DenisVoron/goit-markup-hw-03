@@ -1,0 +1,268 @@
+:root {
+  /*основные шрифты*/
+  --main-font: 'Roboto', sans-serif;
+  --logo-font: 'Raleway', sans-serif;
+
+  /*светлая тема текста*/
+  --accent-txt-cl: #ffffff;
+  --primary-txt-cl: #757575;
+  --footer-txt-cl: rgba(255, 255, 255, 0.6);
+
+  /*темная тема текста*/
+  --title-txt-cl: #212121;
+  --secondary-txt-cl: #2196f3;
+
+  /*темная тема фона*/
+  --main-bg-cl: #2f303a;
+  --section-bg-cl: #f5f4fa;
+}
+
+/*доп шрифт*/
+/*font-family: 'Quintessential', cursive;*/
+
+.body {
+  font-family: var(--main-font);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  background-color: var(--accent-txt-cl);
+
+  color: var(--primary-txt-cl);
+}
+
+/*удаляет линию и диск а,li*/
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+
+/*текст кнопка главная*/
+.hero-btn {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: var(--accent-txt-cl);
+}
+
+.header-logo {
+  font-family: var(--logo-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
+  letter-spacing: 0.03em;
+
+  color: var(--secondary-txt-cl);
+}
+
+/*верхний логотип черный цвет*/
+.header-logo-accent {
+  letter-spacing: 0.03em;
+
+  color: var(--title-txt-cl);
+}
+
+/*Header*/
+.nav-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--title-txt-cl);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--secondary-txt-cl);
+}
+
+.contact-item .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--primary-txt-cl);
+}
+
+.contact-item :hover,
+.contact-item :focus {
+  color: var(--secondary-txt-cl);
+}
+.hero {
+  background-color: var(--main-bg-cl);
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--accent-txt-cl);
+}
+.hero-btn {
+  background-color: var(--secondary-txt-cl);
+}
+.benefits-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--title-txt-cl);
+}
+.benefits-descr {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+.about-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.7;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--title-txt-cl);
+}
+.team {
+  background-color: var(--section-bg-cl);
+}
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.7;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--title-txt-cl);
+}
+.name-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+
+  letter-spacing: 0.03em;
+
+  color: var(--title-txt-cl);
+}
+
+.team-descr {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+/*футер*/
+.footer {
+  background-color: var(--main-bg-cl);
+}
+.footer-logo {
+  font-family: var(--logo-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
+  letter-spacing: 0.03em;
+
+  color: var(--secondary-txt-cl);
+}
+
+/*замена цвета лого*/
+.footer-logo-accent {
+  color: var(--accent-txt-cl);
+}
+
+.address-item .address-link {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+
+  letter-spacing: 0.03em;
+
+  color: var(--accent-txt-cl);
+}
+
+.address-link-contact {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+
+  letter-spacing: 0.03em;
+
+  color: var(--footer-txt-cl);
+}
+
+/*кнопки фильтр*/
+.work-btn {
+  font-family: var(--main-font);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--title-txt-cl);
+}
+
+/*фокус-ховер кнопки фильтр*/
+.work-btn:hover,
+.work-btn:focus {
+  background-color: var(--secondary-txt-cl);
+  color: var(--accent-txt-cl);
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+/*цвет заголовков портфолио*/
+.work-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+
+  letter-spacing: 0.06em;
+
+  color: var(--title-txt-cl);
+}
+/*описание работ*/
+.work-descr {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+}
+/*скрываем удаленный заголовок*/
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
