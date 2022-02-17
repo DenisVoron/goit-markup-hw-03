@@ -30,12 +30,45 @@
   color: var(--primary-txt-cl);
 }
 
-/*удаляет линию и диск а,li*/
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h1:last-child,
+h2:last-child,
+h3:last-child,
+h4:last-child,
+p {
+  margin-bottom: 0;
+}
+
+/*сброс списков*/
 .list {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
   list-style: none;
 }
 .link {
   text-decoration: none;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
 }
 
 /*текст кнопка главная*/
@@ -54,6 +87,7 @@
 }
 
 .header-logo {
+  margin-right: 93px;
   font-family: var(--logo-font);
   font-weight: 700;
   font-size: 26px;
@@ -71,6 +105,16 @@
   color: var(--title-txt-cl);
 }
 
+.nav-item {
+  margin-right: 50px;
+}
+.nav-item:last-child {
+  margin-right: 0;
+}
+.nav-list {
+  display: flex;
+}
+
 /*Header*/
 .nav-link {
   font-weight: 500;
@@ -85,7 +129,14 @@
 .nav-link:focus {
   color: var(--secondary-txt-cl);
 }
-
+.contact-list {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.contact-item:first-child {
+  margin-right: 50px;
+}
 .contact-item .link {
   font-weight: 500;
   font-size: 14px;

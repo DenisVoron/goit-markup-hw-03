@@ -6,13 +6,18 @@
     <title>Portfolio(WebStudio)</title>
     
 
-    <!--основные шрифты-->
+     <!--основные шрифты-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quintessential&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" 
           rel="stylesheet">
 
-        <!--основные стили-->
+     <!--нормализатор стилей-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+            integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <!--основные стили-->
     <link rel="stylesheet" href="./css/styles.css">
 
 </head>
@@ -20,10 +25,11 @@
 
     <!--шапка портфолио-->
     <header class="header">
-        <nav class="nav">
+     <div class="container header-container">
             <a class="header-logo link" href="./index.html">
                 Web<span class="header-logo-accent">Studio</span>
             </a>
+            <nav class="nav">
                 <ul class="nav-list list">
                     <li class="nav-item">
                         <a class="nav-link link" href="./index.html">Студия</a>
@@ -48,6 +54,7 @@
                 </a>
             </li>
         </ul>
+     </div>
     </header>
 
     <!--уникальный контент работ-->
