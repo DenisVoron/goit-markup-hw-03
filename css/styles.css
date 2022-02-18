@@ -57,7 +57,9 @@ p {
 .link {
   text-decoration: none;
 }
-
+.section {
+  padding: 94px 215px;
+}
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -65,7 +67,11 @@ p {
   margin-left: auto;
   margin-right: auto;
 }
-
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  align-items: center;
+}
 .header-container {
   display: flex;
   align-items: center;
@@ -73,11 +79,14 @@ p {
 
 /*текст кнопка главная*/
 .hero-btn {
+  padding: 8px 30px;
+
   font-family: var(--main-font);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
 
+  border-radius: 4px;
   display: flex;
   align-items: center;
   text-align: center;
@@ -88,6 +97,7 @@ p {
 
 .header-logo {
   margin-right: 93px;
+
   font-family: var(--logo-font);
   font-weight: 700;
   font-size: 26px;
@@ -117,6 +127,8 @@ p {
 
 /*Header*/
 .nav-link {
+  padding: 32px 0px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -151,9 +163,19 @@ p {
   color: var(--secondary-txt-cl);
 }
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  padding-right: 452px;
+  padding-left: 452px;
+
   background-color: var(--main-bg-cl);
 }
 .hero-title {
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -165,9 +187,26 @@ p {
   color: var(--accent-txt-cl);
 }
 .hero-btn {
+  margin-left: auto;
+  margin-right: auto;
+
   background-color: var(--secondary-txt-cl);
 }
+
+.benefits-list {
+  display: flex;
+}
+.benefits-item {
+  flex-basis: calc(100% / 4);
+  margin-right: 30px;
+}
+.benefits-item:last-child {
+  margin-right: 0px;
+}
+
 .benefits-title {
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -179,9 +218,13 @@ p {
 .benefits-descr {
   font-weight: 400;
   font-size: 14px;
+
   line-height: 1.71;
 }
+
 .about-title {
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.7;
@@ -190,10 +233,23 @@ p {
 
   color: var(--title-txt-cl);
 }
+
+.about-list {
+  display: flex;
+}
+.about-item {
+  margin-right: 30px;
+}
+.about-item:last-child {
+  margin-right: 0px;
+}
+
 .team {
   background-color: var(--section-bg-cl);
 }
 .team-title {
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.7;
@@ -202,11 +258,33 @@ p {
 
   color: var(--title-txt-cl);
 }
+.team-list {
+  display: flex;
+}
+.team-item {
+  margin-right: 30px;
+}
+.team-item:last-child {
+  margin-right: 0px;
+}
+.team-pic {
+  margin-bottom: 30px;
+}
+.team-wrapper {
+  background-color: var(--accent-txt-cl);
+  padding-bottom: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
 .name-title {
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
 
+  text-align: center;
   letter-spacing: 0.03em;
 
   color: var(--title-txt-cl);
@@ -216,12 +294,21 @@ p {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
+
+  text-align: center;
   letter-spacing: 0.03em;
 }
 
 /*футер*/
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   background-color: var(--main-bg-cl);
+}
+.footer-logo,
+.footer-logo-accent {
+  margin-bottom: 20px;
 }
 .footer-logo {
   font-family: var(--logo-font);
@@ -239,6 +326,12 @@ p {
   color: var(--accent-txt-cl);
 }
 
+.address-item {
+  margin-bottom: 9px;
+}
+.address-item:last-child {
+  margin-bottom: 0px;
+}
 .address-item .address-link {
   font-family: var(--main-font);
   font-style: normal;
@@ -264,6 +357,11 @@ p {
 }
 
 /*кнопки фильтр*/
+.work-list {
+  display: flex;
+  align-items: center;
+}
+
 .work-btn {
   font-family: var(--main-font);
 
