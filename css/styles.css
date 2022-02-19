@@ -114,6 +114,9 @@ p {
 
   color: var(--title-txt-cl);
 }
+.main-nav {
+  display: flex;
+}
 
 .nav-item {
   margin-right: 50px;
@@ -306,8 +309,7 @@ p {
 
   background-color: var(--main-bg-cl);
 }
-.footer-logo,
-.footer-logo-accent {
+.container-logo {
   margin-bottom: 20px;
 }
 .footer-logo {
@@ -356,13 +358,33 @@ p {
   color: var(--footer-txt-cl);
 }
 
+/*раздел работ*/
+.work-wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 56px;
+}
+
 /*кнопки фильтр*/
 .work-list {
   display: flex;
   align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.work-item-btn:not(:last-child) {
+  /* display: flex;
+  align-items: center;*/
+  /*margin-left: 8px;*/
+  margin-right: 8px;
 }
 
 .work-btn {
+  border-color: var(--section-bg-cl);
+  border-radius: 4px;
+
   font-family: var(--main-font);
 
   font-weight: 500;
@@ -385,6 +407,16 @@ p {
 .pointer {
   cursor: pointer;
 }
+.work-list-pic {
+  display: flex;
+  flex-wrap: wrap;
+}
+/*.work-item-pic {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  margin-right: 30px;
+}*/
 
 /*цвет заголовков портфолио*/
 .work-title {
