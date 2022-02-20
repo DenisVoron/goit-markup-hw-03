@@ -15,6 +15,9 @@
   /*темная тема фона*/
   --main-bg-cl: #2f303a;
   --section-bg-cl: #f5f4fa;
+
+  /*цвет border*/
+  --border-cl: #eeeeee;
 }
 
 /*доп шрифт*/
@@ -61,7 +64,7 @@ p {
   padding: 94px 215px;
 }
 .container {
-  width: 1200px;
+  width: 1170px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -94,7 +97,7 @@ p {
 
   color: var(--accent-txt-cl);
 }
-
+/*лого хедр*/
 .header-logo {
   margin-right: 93px;
 
@@ -240,13 +243,11 @@ p {
 .about-list {
   display: flex;
 }
-.about-item {
+.about-item:not(:last-child) {
   margin-right: 30px;
 }
-.about-item:last-child {
-  margin-right: 0px;
-}
 
+/*секция команда*/
 .team {
   background-color: var(--section-bg-cl);
 }
@@ -264,12 +265,10 @@ p {
 .team-list {
   display: flex;
 }
-.team-item {
+.team-item:not(:last-child) {
   margin-right: 30px;
 }
-.team-item:last-child {
-  margin-right: 0px;
-}
+
 .team-pic {
   margin-bottom: 30px;
 }
@@ -300,6 +299,108 @@ p {
 
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+/*кнопки фильтр раздел работ*/
+.work-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 56px;
+}
+
+/*кнопки фильтр*/
+.work-list {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.work-item-btn:not(:last-child) {
+  margin-right: 8px;
+}
+
+.work-btn {
+  border-color: var(--section-bg-cl);
+  border-radius: 4px;
+
+  font-family: var(--main-font);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--title-txt-cl);
+}
+
+/*фокус-ховер кнопки фильтр*/
+.work-btn:hover,
+.work-btn:focus {
+  background-color: var(--secondary-txt-cl);
+  color: var(--accent-txt-cl);
+}
+
+.pointer {
+  cursor: pointer;
+}
+.work-container {
+  display: flex;
+}
+.work-list-pic {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0px;
+  padding-left: 0px;
+}
+.work-item-pic {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.work-item-pic:nth-child(3n) {
+  margin-right: 0;
+}
+.work-item-pic:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
+}
+.work-img-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+
+.work-text-wrapper {
+  width: 370px;
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+
+  background: var(--accent-txt-cl);
+  border-right: 1px solid var(--border-cl);
+  border-bottom: 1px solid var(--border-cl);
+  border-left: 1px solid var(--border-cl);
+}
+
+/*цвет заголовков портфолио*/
+.work-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+
+  letter-spacing: 0.06em;
+
+  color: var(--title-txt-cl);
+}
+/*описание работ*/
+.work-descr {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
 }
 
 /*футер*/
@@ -358,82 +459,6 @@ p {
   color: var(--footer-txt-cl);
 }
 
-/*раздел работ*/
-.work-wrapper {
-  display: flex;
-  align-items: center;
-  margin-top: 100px;
-  margin-bottom: 56px;
-}
-
-/*кнопки фильтр*/
-.work-list {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.work-item-btn:not(:last-child) {
-  /* display: flex;
-  align-items: center;*/
-  /*margin-left: 8px;*/
-  margin-right: 8px;
-}
-
-.work-btn {
-  border-color: var(--section-bg-cl);
-  border-radius: 4px;
-
-  font-family: var(--main-font);
-
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  color: var(--title-txt-cl);
-}
-
-/*фокус-ховер кнопки фильтр*/
-.work-btn:hover,
-.work-btn:focus {
-  background-color: var(--secondary-txt-cl);
-  color: var(--accent-txt-cl);
-}
-
-.pointer {
-  cursor: pointer;
-}
-.work-list-pic {
-  display: flex;
-  flex-wrap: wrap;
-}
-/*.work-item-pic {
-  background: #ffffff;
-  border: 1px solid #eeeeee;
-  box-sizing: border-box;
-  margin-right: 30px;
-}*/
-
-/*цвет заголовков портфолио*/
-.work-title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-
-  letter-spacing: 0.06em;
-
-  color: var(--title-txt-cl);
-}
-/*описание работ*/
-.work-descr {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.87;
-}
 /*скрываем удаленный заголовок*/
 .visually-hidden {
   position: absolute;
