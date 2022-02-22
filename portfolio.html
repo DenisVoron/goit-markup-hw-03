@@ -26,23 +26,24 @@
     <!--шапка портфолио-->
     <header class="header">
      <div class="container header-container">
+      <nav class="nav main-nav">
             <a class="header-logo link" href="./index.html">
                 Web<span class="header-logo-accent">Studio</span>
             </a>
-            <nav class="nav">
-                <ul class="nav-list list">
-                    <li class="nav-item">
-                        <a class="nav-link link" href="./index.html">Студия</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link link" href="./portfolio.html">Портфолио</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link link" href="#contacts">Контакты</a>
-                    </li>
-                </ul>
-        </nav>
-        <ul class="contact-list list">
+
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a class="nav-link link" href="./index.html">Студия</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link" href="./portfolio.html">Портфолио</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link" href="#contacts">Контакты</a>
+                </li>
+            </ul>
+      </nav>
+        <ul class="contact-list">
             <li class="contact-item">
                 <a class="сontact-link link" href="mailto:info@devstudio.com">
                     info@devstudio.com
@@ -67,8 +68,7 @@
 
 
             <!--кнопки-фильтр работ-->
-            <div class="work-wrapper">
-              <ul class="work-list list">
+              <ul class="work-list">
                   <li class="work-item-btn list">
                     <button class="work-btn pointer" type="button">Все</button>
                   </li>
@@ -84,85 +84,67 @@
                   <li class="work-item-btn list">
                     <button class="work-btn pointer" type="button">Маркетинг</button>
                   </li>
-                </ul>
-            </div>
-             <ul class="work-list-pic">
+              </ul>
+  
+              <ul class="work-list-pic">
                 <li class="work-item-pic list">
-                <div class="work-img-wrapper">
                     <img class="work-img" src="./images/catalog/ctl-img-1.jpg" alt="Ноутбук" width="370" />
-                </div>
                   <div class="work-text-wrapper">
                     <h2 class="work-title">Технокряк</h2>
                     <p class="work-descr">Веб-сайт</p>
                   </div>
                 </li>
                 <li class="work-item-pic list">
-                  <div class="work-img-wrapper"> 
                     <img class="work-img" src="./images/catalog/ctl-img-2.jpg" alt="Баскетбол" width="370" />
-                  </div>
                   <div class="work-text-wrapper">
                     <h2 class="work-title">Постер New Orlean vs Golden Star</h2>
                     <p class="work-descr">Дизайн</p>
                   </div>
                 </li>
-                <li class="work-item-pic list">
-                  <div class="work-img-wrapper"> 
-                  <img class="work-img" src="./images/catalog/ctl-img-3.jpg" alt="Логотип с рыбой" width="370" />
-                  </div>
-                    <div class="work-text-wrapper">
+                <li class="work-item-pic list"> 
+                    <img class="work-img" src="./images/catalog/ctl-img-3.jpg" alt="Логотип с рыбой" width="370" />
+                  <div class="work-text-wrapper">
                     <h2 class="work-title">Ресторан Seafood</h2>
                     <p class="work-descr">Приложение</p>
                   </div>
                 </li>
                 <li class="work-item-pic list">
-                  <div class="work-img-wrapper"> 
                     <img class="work-img" src="./images/catalog/ctl-img-4.jpg" alt="Наушники" width="370" />
-                  </div>
                   <div class="work-text-wrapper">
                     <h2 class="work-title">Проект Prime</h2>
                     <p class="work-descr">Маркетинг</p>
                   </div>
                 </li>
                 <li class="work-item-pic list">
-                  <div class="work-img-wrapper">
                     <img class="work-img" src="./images/catalog/ctl-img-5.jpg" alt="Коробки" width="370" />
-                  </div>
                   <div class="work-text-wrapper">
                     <h2 class="work-title">Проект Boxes</h2>
                     <p class="work-descr">Приложение</p>
                   </div>
                 </li>
                 <li class="work-item-pic list">
-                  <div class="work-img-wrapper"> 
                     <img class="work-img" src="./images/catalog/ctl-img-6.jpg" alt="Монитор" width="370" />
-                  </div>
                   <div class="work-text-wrapper">
                     <h2 class="work-title" lang="en">Inspiration has no Borders</h2>
                     <p class="work-descr">Веб-сайт</p>
                   </div>
                 </li>
                 <li class="work-item-pic list">
-                  <div class="work-img-wrapper"> 
                     <img class="work-img" src="./images/catalog/ctl-img-7.jpg" alt="Журнал" width="370" />
-                  </div>
                   <div class="work-text-wrapper">
                     <h2 class="work-title">Издание Limited Edition</h2>
                     <p class="work-descr">Дизайн</p>
                   </div>
                 </li>
                 <li class="work-item-pic list">
-                  <div class="work-img-wrapper">
                     <img class="work-img" src="./images/catalog/ctl-img-8.jpg" alt="Этикетка" width="370" />
-                  </div>
                   <div class="work-text-wrapper">
                     <h2 class="work-title">Проект LAB</h2>
                     <p class="work-descr">Маркетинг</p>
                   </div>
                 </li>
                 <li class="work-item-pic list">
-                  <div class="work-img-wrapper">
                     <img class="work-img" src="./images/catalog/ctl-img-9.jpg" alt="Работа в ноутбуке" width="370" />
-                  </div>
                   <div class="work-text-wrapper">
                     <h2 class="work-title" lang="en">Growing Business</h2>
                     <p class="work-descr">Приложение</p>
@@ -184,7 +166,7 @@
     </div>
 
         <address class="address" id="contacts">
-            <ul class="address-list list">
+            <ul class="address-list">
                 <li class="address-item">
                     <a class="address-link link" href="https://www.google.com/maps/@50.427001,30.5351555,16.5z"
                         target="blank" rel="noopener noreferrer">
